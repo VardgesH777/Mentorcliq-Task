@@ -16,7 +16,7 @@ const Suggesstions = () => {
     const history = useHistory();
 
     const authReducer = useSelector(store => store.auth);
-    const userEmail = JSON.parse(localStorage.getItem("userEmail"))
+    const userEmail = JSON.parse(localStorage.getItem("userEmail"));
     const { users } = authReducer;
     const loggedUser = {...users?.find(i => i.email === userEmail)}
 

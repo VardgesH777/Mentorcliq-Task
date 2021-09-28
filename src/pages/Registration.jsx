@@ -23,7 +23,10 @@ const Registration = () => {
         message.destroy()
         const alreadyRegisteredEmail = users.find(i => i.email === values.email);
             if (!alreadyRegisteredEmail) {
-                await dispatch(userRegister({...values, password: hashString(values.password), suggestedUsers: []}));
+                const registeredUserData = {...values, password: hashString(values.password), suggestedUsers: []}
+                await dispatch(userRegister(
+                    registeredUserData,
+                    [ ...users ].concat([registeredUserData])));
                 UserEmail.set(values.email)
                 return history.push("/suggestions")
             } else {

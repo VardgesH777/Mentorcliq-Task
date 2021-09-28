@@ -24,7 +24,6 @@ const App = () => {
             <Router>
                 <Switch>
                     {Routes.map((route, index) => {
-                        console.log("tryhtyhtyhty")
                         const { path, isExact, component, isPrivate } = route
                         return isPrivate ? <PrivateRoute path={path} component={component} isExact={isExact} key={index}/> : (
                             <Route path={path} component={component} exact={isExact} key={index}/>

@@ -1,0 +1,75 @@
+.inner-page-main-layout {
+  background-color: #33333308;
+  height: 100vh;
+  display: flex;
+  align-items: center; }
+  .inner-page-main-layout .inner-page-content-layout {
+    width: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #979da22e;
+    padding: 40px;
+    height: 80%; }
+    .inner-page-main-layout .inner-page-content-layout .main-title {
+      color: #07abbc;
+      text-align: center;
+      padding-bottom: 40px; }
+    .inner-page-main-layout .inner-page-content-layout .user-image-upload {
+      display: flex;
+      justify-content: space-between; }
+      .inner-page-main-layout .inner-page-content-layout .user-image-upload input {
+        background: unset;
+        border: unset;
+        height: 42px;
+        padding-left: 0; }
+    .inner-page-main-layout .inner-page-content-layout .fileUploader {
+      position: relative;
+      z-index: 100;
+      background: unset;
+      height: 100%; }
+      .inner-page-main-layout .inner-page-content-layout .fileUploader .fileContainer {
+        background: unset;
+        box-shadow: 2px 2px 3px 0 #010100;
+        position: absolute;
+        border-radius: 10px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 0.3s ease-in;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px;
+        height: 100%; }
+        .inner-page-main-layout .inner-page-content-layout .fileUploader .fileContainer .chooseFileButton {
+          position: absolute;
+          bottom: 0; }
+    .inner-page-main-layout .inner-page-content-layout .image-upload-form {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: auto; }
+    .inner-page-main-layout .inner-page-content-layout .profile-picture {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .inner-page-main-layout .inner-page-content-layout .profile-picture .ant-form-item-label {
+        text-align: center; }
+    .inner-page-main-layout .inner-page-content-layout .uploaded-image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden; }
+      .inner-page-main-layout .inner-page-content-layout .uploaded-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/*# sourceMappingURL=Registration.css.map */

@@ -1,0 +1,9 @@
+input {
+  padding: 4px 10px;
+  border-radius: 7px;
+  border: 2px solid gray;
+  ::placeholder{
+    color: grey;
+    font-size: 20px;
+  }
+}

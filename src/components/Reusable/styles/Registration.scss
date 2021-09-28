@@ -1,0 +1,51 @@
+
+.content {
+    width: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 30px;
+    h2{
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    #sign-up-form,#login-form{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .form-input{
+      flex-direction: column;
+      align-items: flex-start;
+      width: calc(50% - 10px);
+      .ant-form-item-control {
+        width: 100%;
+        input{
+          padding: 10px;
+          border-radius: 30px;
+        }
+        .ant-select-selector{
+          height: 44px;
+          display: flex;
+          align-items: center;
+          border-radius: 30px;
+        }
+      }
+    }
+    .submit-btn {
+      width: 100%;
+      height: 60px;
+      background: #13a5dc;
+      color: white;
+      font-size: 20px;
+      border-radius: 30px;
+    }
+    .link{
+      margin-top: 20px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 20px;
+      color: #2788be;
+    }
+}

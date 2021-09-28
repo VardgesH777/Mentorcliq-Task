@@ -1,0 +1,23 @@
+
+.suggestion{
+  .users-suggestions{
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    .title-profile{
+      display: flex;
+      justify-content: space-between;
+    }
+    .suggested-users{
+      margin-top: 50px;
+    }
+  }
+  .title{
+    color: #f9c404;
+  }
+  .logout {
+    cursor: pointer;
+  }
+}
+
+
